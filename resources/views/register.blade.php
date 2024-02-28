@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Registration Page</title>
+  <title>GaleryWEB | Registration Page</title>
 
   <!-- Google Font: Source Sans Pro -->
   <!-- Font Awesome -->
@@ -16,7 +16,7 @@
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href="../../index2.html"><b>REGISTER</b>Galery</a>
   </div>
 
   <div class="card">

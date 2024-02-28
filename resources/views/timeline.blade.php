@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Timeline</title>
+  <title>GaleryWEB | Timeline</title>
 
   <!-- Google Font: Source Sans Pro -->
   <!-- Font Awesome -->
@@ -19,7 +19,7 @@
     <div class="container">
       <a href="../../index3.html" class="navbar-brand">
         <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE 3</span>
+        <span class="brand-text font-weight-light">GaleryWEB</span>
       </a>
 
       <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -857,7 +857,7 @@
   </aside> --}}
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="">
+  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -892,7 +892,7 @@
             <!-- /.timeline-label -->
             <!-- timeline item -->
             <div>
-              <div class="user-block"><img class="img-circle img-bordered-sm ml-1" src="../../dist/img/user1-128x128.jpg" alt="user image"></div>
+              <div class="user-block" style="margin-left: 9px"><img class="img-circle img-bordered-sm ml-1" src="../../dist/img/user1-128x128.jpg" alt="user image" ></div>
               <div class="timeline-item mb-2">
                 <span class="time"><i class="fas fa-clock"></i> 12:05</span>
                 <h3 class="timeline-header mb-2">
@@ -905,7 +905,7 @@
                   {{-- <span class="judul" >
                     <a href="#">{{ $galeri->judul }}</a>
                   </span><br> --}}
-                  <img data-toggle="modal" data-target="#modalimg{{ $galeri->id }}" src="{{ asset('gambar/'.$galeri->foto) }}" width="400" height="400" alt=""><br>
+                  <img data-toggle="modal" data-target="#modalimg{{ $galeri->id }}" src="{{ asset('gambar/'.$galeri->foto) }}" width="300" height="300" alt=""><br>
                   {{ $galeri->deskripsi }}
                 </div>
                 <div class="timeline-footer">
@@ -1025,11 +1025,11 @@
                 <h3 class="modal-title">Preview Image </h3>
               </div>
               <div class="modal-body">
-                <img widh="400" height="400" src="{{ asset('gambar/'.$galeri->foto) }}" alt="">
+                <img width="400" height="400" src="{{ asset('gambar/'.$galeri->foto) }}" alt="">
               </div>
               <div class="modal-footer">
                 <button data-dismiss="modal" class="btn btn-secondary">Close</button>
-                <a href="" class="btn btn-primary" download>Dowload <i class="fas fa-dowload"></i></a>
+                <a href="{{ asset('gambar/'.$galeri->foto) }}" class="btn btn-primary" download="{{ $galeri->foto }}">Dowload <i class="fas fa-dowload"></i></a>
               </div>
             </div>
           </div>
@@ -1073,7 +1073,7 @@
                 <div class="form-group">
                   <label for="foto">Foto</label>
                   <input type="file" name="foto" id="" class="form-control">
-                  <img width="150" height="150" src="{{ asset('gambar/'.$galeri->foto) }}" alt="">
+                  <img width="100" height="100" src="{{ asset('gambar/'.$galeri->foto) }}" alt="">
                 </div>
               </div>
               <div class="modal-footer">
